@@ -206,13 +206,13 @@ border-style: solid;
 border: 1px;
 }
 
-.container-bar {
+.marquee-wrapper {
   width:auto;
   margin: 64px;
   overflow: hidden;
 }
 
-.bar_content {
+.marquee {
   display: block; /* Important to give the content a width */
 
   width: 400%;
@@ -293,9 +293,10 @@ border: 1px;
       opacity: 1;
       right: 15px;
     }
-    .container-branding{
+    .container-cat{
       margin-left: 64px;
       margin-right: 64px;
+      margin-bottom: 100px;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
       padding: 50px;
