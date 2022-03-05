@@ -6,7 +6,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0!important;
   overflow: scroll;
   background-color: #E9E2D3;
   font-family: Syne;
@@ -333,15 +333,11 @@ button:hover::before {
 
 .d-flex-heading {
   flex-direction: row;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: black;
+
 }
 .d-flex-item {
   flex-direction: row;
-  border-bottom: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: black;
+
 }
 
 .heading {
@@ -353,7 +349,7 @@ button:hover::before {
 .arrow {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
+
 }
 
 /*akordioni proov*/
