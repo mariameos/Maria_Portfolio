@@ -22,3 +22,19 @@ $(function() {
 	});
 });
 
+window.onload = function() {
+  const div = document.querySelector('.hole');
+  let isIn = false;
+  div.addEventListener('mouseover', function() {
+    isIn = true;
+  });
+  div.addEventListener('mouseout', function() {
+    isIn = false;
+  });
+  div.addEventListener('mousemove', function() {
+    if (isIn) {
+      div.style.setProperty('--x', event.clientX + 'px');
+      div.style.setProperty('--y', event.clientY + 'px');
+    }
+  });
+}
