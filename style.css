@@ -16,9 +16,8 @@ html, body {
 
 @font-face {
   font-family: gallient;
-  scr: url('font/gallient-webfont.woff2') format('woff2');
-  scr: url('font/gallient-webfont.woff') format('woff');
-  font-weight: normal;
+  src: url('font/gallient-webfont.woff2') format('woff2'), url('font/gallient-webfont.woff') format('woff');
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -306,14 +305,20 @@ p {
   line-height: 0pt;
 }
 
+
 .icon1 {
-  background: url('img/t2rn1.svg');
-  height: 120px;
+  background: url(img/t2rn1.svg) no-repeat;
+  background-position-y: 20px;
+  height: 140px;
   width: 120px;
   display: inline-block;
   line-height: 0pt;
-  /* Other styles here */
+  margin-bottom: -20px;
 }
+
+/* Other styles here */
+
+
 .marquee {
   display: block;
   /* Important to give the content a width */
@@ -484,21 +489,18 @@ div.accordion-item .accordion-header {
 
 
 .accordion-button::after {
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 5rem;
   background-image: url(img/nool-10.svg);
-  background-size: 3rem 3rem;
-  transform: rotate(45deg);
-
-  background-color: #E9E2D3;
-  opacity: 0;
+  background-size: 5rem 5rem;
+  opacity: 1;
   transition: none;
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url(img/nool-10.svg);
-
-  background-color: #E9E2D3;
+  transform: rotate(45deg);
+  transform-origin: center;
+  top: auto;
 }
 
 .accordion-button:not(.collapsed) {
