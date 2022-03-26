@@ -204,15 +204,18 @@ h3.accordion {
 .nav-link:hover {
   color: black;
   text-decoration: line-through;
+  transition: 1s ease;
 }
 
 .nav-link:active {
   color: black;
   text-decoration: line-through;
+  transition: 1s ease;
 }
 
 .nav-link::after {
-  text-decoration: dotted;
+  text-decoration: line-through;
+  transition: 1s ease;
 }
 
 .a {
@@ -223,6 +226,7 @@ h3.accordion {
 a:hover {
   color: black;
   text-decoration: line-through;
+  transition: 1s ease;
 }
 
 
@@ -398,7 +402,7 @@ p {
 
 }
 
-button {
+button.read-more {
   padding: 15px 80px;
   background-color: #E9E2D3;
   border: 1px;
@@ -412,7 +416,7 @@ button {
 }
 
 ::after,
-button::before {
+button.read-more::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -422,7 +426,7 @@ button::before {
   transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-button::after {
+button.read-more::after {
   width: 50px;
   height: 1px;
   background: black;
@@ -430,7 +434,7 @@ button::after {
   margin-top: 0px;
 }
 
-button::before {
+button.read-more::before {
   content: "";
   transform: rotate(-135deg) translateX(50%);
   width: 11px;
@@ -441,13 +445,13 @@ button::before {
   margin-top: -1px;
 }
 
-button:hover {
+button.read-more:hover {
   padding: 15px 120px 15px 40px;
   background-color: #cbe527;
 }
 
-button:hover::after,
-button:hover::before {
+button.read-more:hover::after,
+button.read-more:hover::before {
   opacity: 1;
   right: 15px;
 
@@ -473,7 +477,7 @@ div.accordion-item .accordion-header {
 }
 
 
-.accordion {
+.accordion .accordion-button {
   background-color: #E9E2D3;
 
 }
