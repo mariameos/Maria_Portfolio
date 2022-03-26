@@ -1,0 +1,510 @@
+/* GLobal 
+:root {
+  cursor: none !important;
+}*/
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0 !important;
+  overflow: scroll;
+  background-color: #E9E2D3;
+  font-family: Syne;
+  font-size: 16pt;
+  color: black;
+}
+
+@font-face {
+  font-family: gallient;
+  scr: url('font/gallient-webfont.woff2') format('woff2');
+  scr: url('font/gallient-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h3 {
+  font-family: gallient;
+  font-weight: 50pt;
+  font-style: normal;
+}
+
+h4 {
+  font-family: gallient;
+  font-size: 50pt;
+  font-style: normal;
+}
+
+li::before {
+  color: black;
+  list-style-type: none;
+}
+
+li:hover {
+  color: #cbe527;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+li::after {
+  color: black;
+  list-style-image: url('img/bullet-12.svg');
+}
+
+
+
+.col-10 {
+  border-left-color: black;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-right-color: black;
+  border-right-width: 1px;
+  border-right-style: solid;
+  padding-top: 5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h3.logo {
+  font-size: 50pt;
+  margin-top: 17rem;
+}
+
+.logo {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  margin: auto;
+  transform: rotate(-90deg);
+  padding: 2rem;
+}
+
+.contact {
+  display: block;
+  white-space: nowrap;
+  width: auto;
+  margin: auto;
+  transform: rotate(90deg);
+  padding: 2rem;
+  color: black;
+  text-decoration: none;
+}
+
+
+h3.marquee {
+  font-size: 100pt;
+}
+
+h3.accordion {
+  font-size: 70pt;
+}
+/* Container */
+.box {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+
+  /* SVG Filters should be applied to the container */
+  -webkit-filter: url("#filter-name");
+  filter: url("#filter-name");
+  /*
+  Load filters from external SVGs (optional):
+  filter: url('filters.svg#filter-name');
+  */
+}
+
+/* Dot */
+.dot {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 50%;
+  margin-top: -40px;
+  margin-left: -40px;
+  background: #EEEEEE;
+  border-radius: 40px;
+  transition: ease .1s;
+  pointer-events: none;
+}
+
+.dot:nth-child(5) {
+  background: #9C27B0;
+  transition: ease .1s;
+  transform: scale(1);
+
+}
+
+.dot:nth-child(4) {
+  background: #B037AD;
+  transition: ease .12s;
+  transform: scale(.8);
+}
+
+.dot:nth-child(3) {
+  background: #C245AA;
+  transition: ease .14s;
+  transform: scale(.6);
+}
+
+.dot:nth-child(2) {
+  background: #D252A7;
+  transition: ease .16s;
+  transform: scale(.4);
+}
+
+.dot:nth-child(1) {
+  background: #E35FA4;
+  transition: ease .18s;
+  transform: scale(.2);
+}
+
+.container-fluid.section__nav {
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-image-box-pets {
+  border-radius: 70px;
+  border-color: black;
+  border-style: solid;
+  border: 1px;
+}
+
+.container-intro-pets {
+  text-align: center;
+  background-color: #cbe527;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  height: fit-content;
+  padding: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  background-color: #E9E2D3;
+  border-bottom: black;
+  border-bottom: 1pt;
+  height: 64px;
+  border-bottom-style: solid;
+
+}
+
+
+
+.nav-link {
+  color: black;
+}
+
+.nav-link:hover {
+  color: #cbe527;
+}
+
+.nav-link:active {
+  color: #cbe527;
+}
+
+.nav-link::after {
+  text-decoration: dotted;
+}
+
+.a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #cbe527;
+}
+
+
+.d-flex-hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+.p-5 {
+  padding-right: 0rem !important;
+}
+
+.p-4 {
+  padding: 2rem !important;
+}
+
+.container-intro {
+  padding-top: 50px;
+  margin-right: 100px;
+  text-align: center;
+  background-color: #cbe527;
+  border: 1px;
+  border-color: black;
+  border-style: solid;
+  height: fit-content;
+  width: 1000px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 37pt;
+}
+
+h2 {
+
+  font-size: 20pt;
+}
+
+p {
+  color: black;
+}
+
+.hero-image-box {
+  height: 500px;
+  width: 800px;
+  border-radius: 70px;
+  border-color: black;
+  border-style: solid;
+  border: 1px;
+}
+
+.marquee-wrapper {
+  width: auto;
+  overflow: hidden;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  border-top: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.icon2 {
+  background: url('img/t2rn2.svg');
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  /* Other styles here */
+  line-height: 0pt;
+}
+
+.icon1 {
+  background: url('img/t2rn1.svg');
+  height: 120px;
+  width: 120px;
+  display: inline-block;
+  line-height: 0pt;
+  /* Other styles here */
+}
+.marquee {
+  display: block;
+  /* Important to give the content a width */
+  width: 100%;
+  transform: translateX(0%);
+  /* Animation start out of the screen */
+  /* Add the animation */
+  animation: move 50s linear infinite
+    /* infinite make reapeat the animation indefinitely */
+  ;
+  white-space: nowrap;
+}
+
+/* Create the animation */
+@keyframes move {
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.coin {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  row-gap: 0px;
+}
+
+.work-first {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  margin-bottom: 6rem;
+  row-gap: 0px;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.work {
+  display: flex;
+  justify-content: center;
+  padding: 5rem;
+  margin-bottom: 6rem;
+  row-gap: 0px;
+  border-top: black;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-bottom: black;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+}
+
+.image-box-hunt {
+  border-width: 1px;
+  border-radius: 70px;
+  border-color: black;
+  border-style: solid;
+  max-width: 500px;
+  max-height: 500px;
+}
+.image-box {
+  border-width: 1px;
+  border-radius: 70px;
+  border-color: black;
+  border-style: solid;
+  max-width: 500px;
+
+}
+.gallery-frame {
+  border-width: 1px;
+  border-radius: 70px;
+  border-color: black;
+  border-style: solid;
+  /* max-width: 500px; */
+
+}
+.text-box {
+  margin-right: 100px;
+}
+
+.container-story {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+button.read-more {
+  padding: 15px 80px;
+  background-color: #E9E2D3;
+  border: 1px;
+  border-style: solid;
+  border-radius: 400%;
+  border-color: black;
+  position: relative;
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
+  display: block;
+}
+
+::after,
+button.read-more::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all .4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+button.read-more::after {
+  width: 50px;
+  height: 1px;
+  background: black;
+  transform: translateX(-3px);
+  margin-top: 0px;
+}
+
+button.read-more::before {
+  content: "";
+  transform: rotate(-135deg) translateX(50%);
+  width: 11px;
+  height: 11px;
+  background-color: #cbe527;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin-top: -1px;
+}
+
+button.read-more:hover {
+  padding: 15px 120px 15px 40px;
+  background-color: #cbe527;
+}
+
+button.read-more:hover::after,
+button.read-more:hover::before {
+  opacity: 1;
+  right: 15px;
+
+}
+
+
+.accordion-item {
+  background-color: #E9E2D3;
+  box-shadow: none;
+  border: none;
+}
+
+/*akordioni proov*/
+div.accordion-item .accordion-header {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2rem;
+  background-color: #E9E2D3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+
+}
+
+
+.accordion {
+  background-color: #E9E2D3;
+
+}
+
+
+.accordion-button::after {
+  width: 3rem;
+  height: 3rem;
+  background-image: url(img/nool-10.svg);
+  background-size: 3rem 3rem;
+  transform: rotate(45deg);
+
+  background-color: #E9E2D3;
+  opacity: 0;
+  transition: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(img/nool-10.svg);
+
+  background-color: #E9E2D3;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #E9E2D3;
+  background-color: #E9E2D3;
+  box-shadow: none;
+  color: black;
+
+}
+
+
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(img/nool-10.svg);
+  background-color: #E9E2D3;
+}
